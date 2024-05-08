@@ -136,7 +136,7 @@ function toggle_like(post_id, type) {
             success: function (response) {
                 console.log("like");
                 $i_like.addClass("fa-heart").removeClass("fa-heart-o");
-                $a_like.find("span.like-num").text(response["count"]);
+                $a_like.find("span.like-num").text(num2str(response["count"]))
             },
         });
     }
@@ -173,7 +173,7 @@ function toggle_star(post_id, type) {
             success: function (response) {
                 console.log("like");
                 $i_like.addClass("fa-star").removeClass("fa-star-o");
-                $a_like.find("span.like-num").text(response["count"]);
+                $a_like.find("span.like-num").text(num2str(response["count"]))
             },
         });
     }
@@ -210,7 +210,7 @@ function toggle_thumbsup(post_id, type) {
             success: function (response) {
                 console.log("like");
                 $i_like.addClass("fa-thumbs-up").removeClass("fa-thumbs-o-up");
-                $a_like.find("span.like-num").text(response["count"]);
+                $a_like.find("span.like-num").text(num2str(response["count"]))
             },
         });
     }
